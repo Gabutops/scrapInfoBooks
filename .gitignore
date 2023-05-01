@@ -1,0 +1,6 @@
+/api
+/.vscode
+/__pycache__
+/prod-venv
+/docker-compose.yml
+/requirements.txt
