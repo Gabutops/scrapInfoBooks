@@ -16,7 +16,7 @@ def add(lista):
         
         nova_linha = pd.DataFrame([data], columns=df.columns)
         df = pd.concat([df, nova_linha], ignore_index=True)
-        df.to_csv('data.csv', index=False, encoding='utf-8',sep=";")
+        df.to_csv('data.csv', index=False, encoding='utf-8-sig',sep=";")
 def delete_data_file():
     import os
     if os.path.exists('data.csv'):
