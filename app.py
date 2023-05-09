@@ -18,6 +18,6 @@ def submit_urls(urls):
 
 def process_urls():
     urls = textarea(label='Insira as URLs, separadas por vírgulas:', rows=5)
-    actions(submit_urls(urls),'Enviar')
+    submit_urls(urls)
 if __name__ == '__main__':
-    start_server(process_urls, port=80)
+    start_server(process_urls, host="0.0.0.0", port=8000)

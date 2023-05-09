@@ -42,17 +42,6 @@ def extract_data_from_mundosInfinitos(link):
     driver.get(link)
     wait = WebDriverWait(driver, 5)
     try:
-        # carregue os cookies salvos anteriormente
-        import pickle
-        with open('cookies.pkl', 'rb') as f:
-            cookies = pickle.load(f)
-
-        # adicione os cookies à sessão atual do driver
-        for cookie in cookies:
-            driver.add_cookie(cookie)
-    except:
-        pass
-    try:
         # Espera até que o botão "Aceitar cookies" esteja visível
         cookies_button = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'btn-politicas botaoespaco')))
         cookies_button.click()
