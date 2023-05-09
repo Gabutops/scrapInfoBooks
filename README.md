@@ -13,7 +13,7 @@ Para utilizar este web scraper, é necessário ter o Python 3 instalado na sua m
 
 `pip install -r requirements.txt`
 
-`py /client/app.py`
+`py /app.py`
 
 1. Abra seu navegador e acesse **https://localhost:80**
 2. Insira na lista as *URLS*
